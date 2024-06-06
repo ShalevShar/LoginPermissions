@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/buttonColor">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="-100dp"
+        android:layout_marginEnd="-100dp"
+        android:background="@color/riddleTextColor"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Congratulations !"
+        android:fontFamily="@font/secondary_font"
+        android:textColor="@color/buttonColor"
+        android:layout_margin="45dp"
+        android:textSize="45sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="You've made it ! Well done !"
+        android:textSize="25sp"
+        android:fontFamily="@font/secondary_font"
+        android:textColor="@color/buttonColor"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_LBL_header"
+        android:shadowColor="@color/black"
+        android:shadowDx="0.2"
+        android:shadowDy="0.8"
+        android:shadowRadius="1.1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_party"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/icon_party"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_LBL_info"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_exit"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/secondary_font"
+        android:textColor="@color/riddleTextColor"
+        android:backgroundTint="@color/buttonColor"
+        app:icon="@drawable/icon_exit"
+        app:iconTint="@color/riddleTextColor"
+        app:iconGravity="start"
+        app:strokeColor="@color/riddleTextColor"
+        app:strokeWidth="3dp"
+        app:cornerRadius="10sp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

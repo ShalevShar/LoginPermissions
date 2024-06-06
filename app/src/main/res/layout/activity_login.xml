@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".LoginActivity"
+    android:background="@color/mainColor">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginStart="-100dp"
+        android:background="@color/headerBannerColor"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_LBL_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to our challenge"
+        android:fontFamily="@font/header_font"
+        android:textColor="@color/buttonColor"
+        android:layout_margin="40dp"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_LBL_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Can you uncover the secret to logging in?\n
+No passwords required—find the hidden keys to access!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/secondary_font"
+        android:textColor="@color/buttonColor"
+        android:layout_below="@+id/login_LBL_header"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_signIn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        app:icon="@drawable/icon_arrow"
+        app:iconTint="@color/mainColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/secondary_font"
+        android:textColor="@color/mainColor"
+        android:backgroundTint="@color/buttonColor"
+        app:cornerRadius="10sp"
+        app:strokeColor="#5F7C9F"
+        app:strokeWidth="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:layout_alignParentBottom="true"
+        app:iconGravity="end" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_IMG_riddle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_riddle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/login_LBL_info"/>
+</RelativeLayout>
